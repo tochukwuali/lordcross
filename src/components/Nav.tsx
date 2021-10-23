@@ -5,14 +5,14 @@ const Nav = () => {
     return (
         <nav className="py-8 bg-co-blue">
           <div className="max-w-6xl mx-auto flex space-x-10 items-center">
-          <div className="w-1/4">
+          <Link to="/" className="w-1/4">
             <img src={Logo} alt="lordcross logo" className="w-7/12" />
-          </div>  
+          </Link>  
           <div className="mt-3 flex justify-between w-full">
             <ul className="flex space-x-8">
-               <li className="text-gray-300 font-bold uppercase check"><a href="/" className="text-xs">About</a></li>
-               <li className="text-gray-300 font-bold uppercase check"><a href="/" className="text-xs">Services</a></li>
-               <li className="text-gray-300 font-bold uppercase check"><a href="/" className="text-xs">Contact Us</a></li>
+               <li className="text-gray-300 font-bold uppercase check"><Link to="/about" className="text-xs">About</Link></li>
+               <li className="text-gray-300 font-bold uppercase check"><a href="/#services" className="text-xs">Services</a></li>
+               <li className="text-gray-300 font-bold uppercase check"><a href="/#contact" className="text-xs">Contact Us</a></li>
                <li className="text-gray-300 font-bold uppercase check"><a href="/" className="text-xs">FAQs</a></li>
             </ul>
             <div>

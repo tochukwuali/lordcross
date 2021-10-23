@@ -1,5 +1,5 @@
-import Partners from "../components/Partners";
 import HeroImage from "../assets/hero2-img.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,12 +16,12 @@ const Hero = () => {
             help. We're your one stop shop for overseas relocation and study!
           </p>
           <div className="mt-12">
-            <a
-              href="/"
+            <Link
+              to="/register"
               className="py-3 px-6 text-white border border-co-yellow font-semibold text-base rounded-sm"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
         <div className="w-full -mt-12">

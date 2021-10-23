@@ -9,7 +9,7 @@ const Features = () => {
       topic: "Relocation",
       aos: "fade-right",
       bgCol: "bg-blue-500",
-      link: "/lcross/relocation",
+      link: "/relocation",
       paragraph:
         "With study visa you can work full time and if you have a family, they can come with you as well and enjoy all the benefits that are available in the country. ",
     },
@@ -19,7 +19,7 @@ const Features = () => {
       topic: "Study",
       aos: "fade-left",
       bgCol: "bg-co-yellow",
-      link: "/lcross/study",
+      link: "/study",
       paragraph:
         "The benefits of studying abroad is massive and you would never know until you embark on the journey to explore what is obtainable on the other side of the divide.",
     },
@@ -29,7 +29,7 @@ const Features = () => {
       topic: "Scholarship",
       aos: "fade-left",
       bgCol: "bg-blue-400",
-      link: "/lcross/scholarship",
+      link: "/scholarship",
       paragraph:
         "There are various schools that offer subsidized tuition. So whether it's full or part scholarship, we help connect you to these opportunities overseas.",
     },

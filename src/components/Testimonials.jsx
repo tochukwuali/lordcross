@@ -5,7 +5,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Alegu Joshua",
-      current: "Phd Research @ Edinburgh Napier",
+      current: "Phd Research @ Edinburgh Napier University",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ea doloremque ipsa eius aliquam minus maiores cumque adipisci delectus unde?",
     },
@@ -25,14 +25,14 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto mt-24">
       <div className="text-center">
         <h3 className="font-semibold md:text-2xl text-2xl text-co-blue">
           Don't take our word for it{" "}
           <span className="block">hear from our clients</span>
         </h3>
       </div>
-      <div className="bg-white flex space-x-6 mt-8">
+      <div className="bg-white flex space-x-6 mt-16">
         {testimonies.map((testimony, index) => (
           <div
             className="w-1/3 bg-gray-200 rounded-md shadow-xl p-4"
