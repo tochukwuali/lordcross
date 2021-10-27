@@ -171,7 +171,12 @@ const Register = () => {
                     <div className="w-full lg:w-12/12 px-4">
                       <div className="relative w-full mb-3">
                         <div>
-                          <label htmlFor="Programme">Degree Program</label>
+                        <label
+                          className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="programme"
+                        >
+                          Degree Program
+                        </label>
                           <select
                             name="programme"
                             value={programme}
@@ -205,6 +210,9 @@ const Register = () => {
                         ></textarea>
                       </div>
                     </div>
+                   <div className="px-4 mb-3">
+                   <button className="bg-co-blue text-white py-3 px-6 font-semibold hover:bg-blue-900 hover:text-gray-100">Submit</button>
+                   </div>
                   </div>
                 </form>
               </div>
