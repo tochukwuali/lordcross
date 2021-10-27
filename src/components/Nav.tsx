@@ -67,7 +67,7 @@ const Nav = () => {
         className={`md:hidden flex justify-between bg-nav-grey w-full px-4 py-6 `}
       >
         <div className="relative">
-          <img src={Logo} alt="lord cross logo" className="w-20" />
+          <img src={Logo} alt="lord cross logo" className="w-2/5" />
         </div>
         <div className="relative">
           <MobileIcon toggle={toggle} openNav={openNav} />
@@ -78,7 +78,7 @@ const Nav = () => {
           </div>
           <ul className="nav__list">
             <li className="mt-6 uppercase text-gray-500 " onClick={openNav}>
-              <a href="https://as8s.com">Home</a>
+              <Link to="/">Home</Link>
             </li>
 
             <li className="mt-6 uppercase text-gray-500" onClick={openNav}>

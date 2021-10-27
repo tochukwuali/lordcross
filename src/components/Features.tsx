@@ -35,14 +35,14 @@ const Features = () => {
     },
   ];
   return (
-    <section id="features" className="py-16 px-4 md:py-24 relative bg-white">
+    <section id="features" className="py-16 px-4 md:py-24 -mt-24 md:-mt-0 relative bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center">
           <h3 className="font-bold md:text-4xl text-2xl text-blue-900">
           What we can <span className="text-co-yellow">do for you</span>
           </h3>
           
-          <p className="mx-auto max-w-3xl mt-8 md:mt-8 text-gray-600">
+          <p className="mx-auto md:max-w-3xl px-4 mt-8 md:mt-8 text-gray-500">
             We help you alleviate the stress involved in relocating to "the abroad" for your studies
           </p>
         </div>

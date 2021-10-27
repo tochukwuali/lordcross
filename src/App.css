@@ -22,3 +22,124 @@ body {
 .check a:hover::after {
   width: 100%;
 }
+
+.mobileIcon {
+  position: relative;
+  z-index: 3;
+  width: 20px;
+  top: 5px;
+  right: 15px;
+}
+
+.icon {
+  width: 30px;
+  /* height: 45px; */
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+ }
+
+.icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.icon span:nth-child(1) {
+  top: 5px;
+}
+
+.icon span:nth-child(2) {
+  top: 13px;
+  width: 50%;
+  left: 15px;
+}
+
+.icon.open span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+.icon.open span:nth-child(2) {
+  transform: rotate(45deg);
+  width: 100%;
+  left: 3px;
+  top: 0px;
+}
+
+/* open the navbar by clicking the hamburger icon */
+
+.nav__desktop {
+  display: none;
+}
+
+.nav__wr {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  margin-top: -15px;
+  color: white;
+}
+
+.Nav.menuOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  background-color: #fff;
+  max-height: 100vh;
+  height: 500px;
+  padding: 20px 0px;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(1, 1, 0.5, 1);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Nav.menuOpen a:hover {
+  color: grey;
+}
+
+.Nav {
+  display: none;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.4rem;
+}
+
+.side__nav_logo {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
