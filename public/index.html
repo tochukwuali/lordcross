@@ -13,6 +13,27 @@
     <title>LordCross Consults</title>
   </head>
   <body>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="comment"></textarea>
+    </form>
+
+    <form
+      name="lordcross_register"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="email" name="email" />
+      <select name="country" id="country"></select>
+      <input type="tel" name="phone" />
+      <select name="programme" id="programme"></select>
+      <textarea name="comment"></textarea>
+    </form>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
  

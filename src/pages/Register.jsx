@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CountryDropdown } from "react-country-region-selector";
-// import { useToasts } from "react-toast-notifications";
+import { useToasts } from "react-toast-notifications";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -10,6 +10,56 @@ const Register = () => {
   const [country, setCountry] = useState("");
   const [programme, setProgramme] = useState("");
   const [comment, setComment] = useState("");
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };  
+
+  const { addToast } = useToasts();
+
+  const handleSubmit = (e) => {
+    const userData = {
+      firstName,
+      lastName,
+      email,
+      country,
+      phone,
+    
+      programme,
+      comment,
+    };
+    if (navigator.onLine) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "lordcross_register", ...userData }),
+      })
+        .then(() =>
+          addToast("Thank you for applying! you'll hear from us shortly", {
+            appearance: "success",
+          })
+        )
+        .catch((error) => addToast(error.message, { appearance: "error" }));
+      setCountry("");
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhone("");
+  
+      setProgramme("");
+      setComment("");
+    } else {
+      addToast(
+        "There apperas to be  an error with your connection. Try again",
+        {
+          appearance: "error",
+        }
+      );
+    }
+    e.preventDefault();
+  };
 
   return (
     <section className="bg-gray-50">
@@ -21,7 +71,7 @@ const Register = () => {
                 
               </div>
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
                     User Information
                   </h6>
