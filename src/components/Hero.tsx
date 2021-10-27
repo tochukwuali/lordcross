@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className=" py-20 h-screen bg-co-blue">
+    <div className=" py-52 h-screen bg-co-blue">
       <div className="max-w-6xl mx-auto flex space-x-8">
         <div>
           <h1 className="font-extrabold text-6xl text-white leading-tight">
