@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CountryDropdown } from "react-country-region-selector";
-import { useToasts } from "react-toast-notifications";
+
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -17,16 +17,13 @@ const Register = () => {
       .join("&");
   };  
 
-  const { addToast } = useToasts();
-
   const handleSubmit = (e) => {
     const userData = {
       firstName,
       lastName,
       email,
       country,
-      phone,
-    
+      phone,    
       programme,
       comment,
     };
@@ -36,27 +33,19 @@ const Register = () => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "lordcross_register", ...userData }),
       })
-        .then(() =>
-          addToast("Thank you for applying! you'll hear from us shortly", {
-            appearance: "success",
-          })
+        .then((result) =>
+          console.log(result)
         )
-        .catch((error) => addToast(error.message, { appearance: "error" }));
+        .catch((error) => console.log(error));
       setCountry("");
       setFirstName("");
       setLastName("");
       setEmail("");
       setPhone("");
-  
       setProgramme("");
       setComment("");
     } else {
-      addToast(
-        "There apperas to be  an error with your connection. Try again",
-        {
-          appearance: "error",
-        }
-      );
+      console.log('trying')
     }
     e.preventDefault();
   };
