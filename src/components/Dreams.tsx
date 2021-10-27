@@ -8,17 +8,17 @@ const Dreams = () => {
           <div className="w-2/4">
             <img src={DreamImage} alt="studying abroad" className="w-full rounded-md shadow-2xl" />
           </div>
-          <div className="w-2/4 mt-20 text-center">
+          <div className="w-2/4 mt-24 text-center">
             <div className="text-center">
               <h3 className="font-bold md:text-3xl text-2xl text-blue-900">
                 We point you in the <span className="text-co-yellow">right direction</span>
               </h3>
             </div>
             <p className="mt-4 leading-relaxed text-gray-600">
-              At LordCross we guide you as you make your choice of country,
+              {/* At LordCross we guide you as you make your choice of country,
               university, and your study options. You are never alone, you are
-              never confused, LordCross is with you all the way. Everything you
-              need to know about living abroad, obtaining visas, course fees,
+              never confused, LordCross is with you all the way.  */}
+              Everything you need to know about living abroad, obtaining visas, course fees,
               university exchange programs obtaining university grant for small
               projects, work experience, getting a job after study, and working
               towards your settlement scheme.

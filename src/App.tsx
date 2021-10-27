@@ -6,7 +6,7 @@ import Register from "./pages/Register";
 import Study from "./pages/Study";
 import Scholarship from "./pages/Scholarship";
 import Relocation from "./pages/Relocation";
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
