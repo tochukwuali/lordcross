@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="md:py-52 py-16 h-screen bg-co-blue">
-      <div className="xl:max-w-6xl mx-auto md:max-w-xl p-4 md:flex md:space-x-8">
+    <div className="md:py-32 py-16 h-screen bg-co-blue">
+      <div className="xl:max-w-6xl mx-auto md:max-w-4xl p-4 md:flex md:space-x-8">
         <div className="text-center md:text-left">
           <h1 className="font-extrabold md:text-6xl text-4xl text-white leading-tight">
             Relocate & Study <br />{" "}

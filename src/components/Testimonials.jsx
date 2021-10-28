@@ -27,7 +27,7 @@ const Testimonials = () => {
   return (
     <div className="max-w-6xl mx-auto mt-24">
       <div className="text-center">
-        <h3 className="font-semibold md:text-2xl text-2xl text-co-blue">
+        <h3 className="font-semibold md:text-4xl leading-tight text-2xl text-co-blue">
           Don't take our word for it{" "}
           <span className="block">hear from our clients</span>
         </h3>

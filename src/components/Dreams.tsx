@@ -3,12 +3,12 @@ import DreamImage from "../assets/red-man-640.jpg";
 const Dreams = () => {
   return (
     <section className="py-16 px-4 md:py-24 relative bg-dreams">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex space-x-10">
-          <div className="w-2/4">
+      <div className="xl:max-w-6xl md:max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row md:space-x-10">
+          <div className="md:w-2/4">
             <img src={DreamImage} alt="studying abroad" className="w-full rounded-md shadow-2xl" />
           </div>
-          <div className="w-2/4 mt-24 text-center">
+          <div className="md:w-2/4 md:mt-24 mt-16 text-center">
             <div className="text-center">
               <h3 className="font-bold md:text-3xl text-2xl text-blue-900">
                 We point you in the <span className="text-co-yellow">right direction</span>

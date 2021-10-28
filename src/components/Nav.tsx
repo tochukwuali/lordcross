@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/lc_logo.png";
 import MobileIcon from "./MobileIcon";
 
 const Nav = () => {
-  const [scroll, setScroll] = useState(false);
+  // const [scroll, setScroll] = useState(false);
 
   const [toggle, setToggle] = useState(false);
   let attachedClasses = ["Nav"];
@@ -13,18 +13,16 @@ const Nav = () => {
     attachedClasses = ["Nav", "menuOpen"];
   }
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 650);
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY > 650);
+  //   });
+  // }, []);
 
   return (
     <div className="w-full bg-co-blue">
       <nav
-        className={`xl:px-24 mx-auto md:flex md:justify-between py-8 hidden fixed top-0 z-30 h-20 ${
-          scroll ? "bg-white border-b shadow-xl " : "bg-co-blue"
-        }`}
+        className={`xl:px-24 mx-auto md:flex md:justify-between py-6 hidden `}
       >
         <Link to="/" className="w-1/4">
           <img src={Logo} alt="lordcross logo" className="w-9/12" />
