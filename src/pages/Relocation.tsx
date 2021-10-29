@@ -3,7 +3,7 @@ import { BsCheck2Square } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import RelocationBg from "../assets/relocation-bg.webp";
-import RelocationBgMd from "../assets/relocation-bg-md2.webp";
+import RelocationBgMd from "../assets/relocation-bg-md.webp";
 
 const Relocation = () => {
   return (
