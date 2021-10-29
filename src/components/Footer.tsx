@@ -16,19 +16,19 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 mt-8 md:-ml-20">
             <Link
               to="/about"
-              className="uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
+              className="md:uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
             >
               About
             </Link>
             <Link
               to="/register"
-              className="uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
+              className="md:uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
             >
               Get Started
             </Link>
             <Link
               to="/about"
-              className="uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
+              className="md:uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
             >
               Services
             </Link>

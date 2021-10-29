@@ -10,6 +10,7 @@ const Features = () => {
       aos: "fade-right",
       bgCol: "bg-blue-500",
       link: "/relocation",
+      linkId: "relocation",
       paragraph:
         "With study visa you can work full time and if you have a family, they can come with you as well and enjoy all the benefits that are available in the country. ",
     },
@@ -20,6 +21,7 @@ const Features = () => {
       aos: "fade-left",
       bgCol: "bg-co-yellow",
       link: "/study",
+      linkId: "study",
       paragraph:
         "The benefits of studying abroad is massive and you would never know until you embark on the journey to explore what is obtainable on the other side of the divide.",
     },
@@ -30,12 +32,13 @@ const Features = () => {
       aos: "fade-left",
       bgCol: "bg-blue-400",
       link: "/scholarship",
+      linkId: "scholarship",
       paragraph:
         "There are various schools that offer subsidized tuition. So whether it's full or part scholarship, we help connect you to these opportunities overseas.",
     },
   ];
   return (
-    <section id="features" className="py-16 px-4 md:py-24 -mt-24 md:-mt-0 relative bg-white">
+    <section id="features" className="py-16 px-6 md:py-24 -mt-24 md:-mt-0 relative bg-white">
       <div className="xl:max-w-6xl md:max-w-4xl mx-auto">
         <div className="text-center">
           <h3 className="font-bold md:text-4xl text-2xl text-blue-900">
@@ -46,13 +49,14 @@ const Features = () => {
             We help you alleviate the stress involved in relocating to "the abroad" for your studies
           </p>
         </div>
-        <div className="flex flex-col md:flex-row md:space-x-6 space-y-8 md:space-y-0 mt-12">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-12 md:space-y-0 mt-12">
           {featuresData.map((feature) => (
             <div
               key={feature.id}
-              className="rounded-lg shadow-2xl bg-gray-100 p-6 "
+              className="rounded-lg shadow-lg md:shadow-2xl bg-gray-100 p-6 "
               data-aos={feature.aos}
               data-aos-offset={100}
+              id={feature.linkId}
             >
               <div className={`${feature.bgCol} w-12 h-12 rounded-full flex justify-center items-center`}>
                 {feature.icon}
