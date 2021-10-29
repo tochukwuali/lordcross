@@ -3,8 +3,8 @@ import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import { Links } from "../components/links";
 import { BsLink45Deg } from "react-icons/bs";
-import RelocationBg from "../assets/relocation-bg.jpg";
-import RelocationBgMd from "../assets/relocation-bg-md.jpg";
+import ScholarshipBg from "../assets/scholarship-bg.webp";
+import ScholarshipBgMd from "../assets/scholarship-bg-md.webp";
 
 const Scholarship = () => {
   return (
@@ -25,9 +25,9 @@ const Scholarship = () => {
         </div>
         <div className="mt-4">
           <img
-            src={RelocationBg}
+            src={ScholarshipBg}
             alt=""
-            srcSet={`${RelocationBg} 640w, ${RelocationBgMd} 768w`}
+            srcSet={`${ScholarshipBg} 640w, ${ScholarshipBgMd} 768w`}
           />
         </div>
         <div className="py-8 text-gray-200">

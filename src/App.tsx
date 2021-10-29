@@ -1,4 +1,5 @@
 import "./App.css";
+import ScrollToTop from "./ScrollToTop";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -11,6 +12,7 @@ import { Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div className="">
+      <ScrollToTop />
       <Nav />
       <Switch>
       <Route path="/register" component={Register} exact />

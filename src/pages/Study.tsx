@@ -4,8 +4,8 @@ import { BiCheckbox } from "react-icons/bi";
 import { FiCheckSquare } from "react-icons/fi";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
-import RelocationBg from "../assets/relocation-bg.jpg";
-import RelocationBgMd from "../assets/relocation-bg-md.jpg";
+import StudyBg from "../assets/study-bg.webp";
+import StudyBgMd from "../assets/study-bg-md.webp";
 
 const Study = () => {
   return (
@@ -26,9 +26,9 @@ const Study = () => {
         </div>
         <div className="mt-4">
           <img
-            src={RelocationBg}
+            src={StudyBg}
             alt=""
-            srcSet={`${RelocationBg} 640w, ${RelocationBgMd} 768w`}
+            srcSet={`${StudyBg} 640w, ${StudyBgMd} 768w`}
           />
         </div>
         <div className="py-8 text-gray-200">

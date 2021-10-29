@@ -2,8 +2,8 @@ import { FaChevronRight } from "react-icons/fa";
 import { BsCheck2Square } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
-import RelocationBg from "../assets/relocation-bg.jpg";
-import RelocationBgMd from "../assets/relocation-bg-md.jpg";
+import RelocationBg from "../assets/relocation-bg.webp";
+import RelocationBgMd from "../assets/relocation-bg-md2.webp";
 
 const Relocation = () => {
   return (
