@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { CountryDropdown } from "react-country-region-selector";
-
+import { FaChevronRight } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -54,11 +56,22 @@ const Register = () => {
     <section className="bg-gray-50">
       <div>
         <section className="py-4">
-          <div className="w-full lg:w-8/12 px-4 mx-auto mt-6">
+          <div className="w-full lg:w-8/12 px-4 mx-auto mt-3">
+          <div className="px-2 mb-3">
+          <a href="/" className="mr-2 inline-block text-gray-400">
+            Home
+          </a>
+          <IconContext.Provider
+            value={{ className: "text-gray-400 inline-block text-sm" }}
+          >
+            <FaChevronRight />
+          </IconContext.Provider>
+          <Link to="/register" className="px-1 inline-block text-gray-900">
+            Register
+          </Link>
+        </div>
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-2xl rounded-lg bg-blueGray-100 border-0">
-              <div className="rounded-t bg-white mb-0 px-6 py-6">
-                
-              </div>
+            
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
                 <form onSubmit={handleSubmit}>
                   <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">

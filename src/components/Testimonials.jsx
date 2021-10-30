@@ -1,4 +1,23 @@
-// import Slider from "../components/Slider";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
 
 const Testimonials = () => {
   const testimonies = [
@@ -25,24 +44,38 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="max-w-6xl mx-auto mt-24">
+    <div className="max-w-6xl mx-auto mt-16 md:mt-24">
       <div className="text-center">
         <h3 className="font-semibold md:text-4xl leading-tight text-2xl text-co-blue">
           Don't take our word for it{" "}
           <span className="block">hear from our clients</span>
         </h3>
       </div>
-      <div className="bg-white flex space-x-6 mt-16">
-        {testimonies.map((testimony, index) => (
+      <div className="bg-white md:flex md:space-x-6 mt-16 hidden">
+        {testimonies.map(({ name, description, current }, index) => (
           <div
             className="w-1/3 bg-gray-200 rounded-md shadow-xl p-4"
             key={index}
           >
-            <p>{testimony.description}</p>
-            <h3 className="text-co-blue font-semibold mt-4">{testimony.name}</h3>
-            <small className="mt-2">{testimony.current}</small>
+            <p>{description}</p>
+            <h3 className="text-co-blue font-semibold mt-4">{name}</h3>
+            <small className="mt-2">{current}</small>
           </div>
         ))}
+      </div>
+      <div className="mt-8 px-4">
+      <Slider {...settings} className="">
+      {testimonies.map(({ name, description, current }, index) => (
+          <div
+            className="w-1/3 bg-gray-200 rounded-md shadow-xl p-4"
+            key={index}
+          >
+            <p>{description}</p>
+            <h3 className="text-co-blue font-semibold mt-4">{name}</h3>
+            <small className="mt-2">{current}</small>
+          </div>
+        ))}
+        </Slider>
       </div>
     </div>
   );

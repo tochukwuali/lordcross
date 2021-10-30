@@ -41,7 +41,7 @@ const Steps = () => {
       <div className="xl:max-w-6xl md:max-w-4xl md:-mt-28 text-center mx-8 md:mx-auto md:text-left md:p-4 ">
         <Link
           to="/register"
-          className="bg-green-700 rounded-sm text-white py-3 px-6 mt-12 inline-block w-full"
+          className="bg-green-700 rounded-sm text-white py-3 px-6 mt-12 inline-block w-full md:w-40"
         >
           Get Started
         </Link>

@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Study from "./pages/Study";
 import Scholarship from "./pages/Scholarship";
 import Relocation from "./pages/Relocation";
+import About from "./pages/About";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/study" component={Study} exact />
       <Route path="/scholarship" component={Scholarship} exact />
       <Route path="/relocation" component={Relocation} exact />
+      <Route path="/about" component={About} exact />
       <Route path="/" component={Home} exact />
       </Switch>
       <Footer />

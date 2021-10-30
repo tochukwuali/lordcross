@@ -40,57 +40,62 @@ const Nav = () => {
               </a>
             </li>
             <li className="text-gray-300 font-bold uppercase check">
-              <a href="/#contact" className="text-xs">
+              <a href="/#enquiry" className="text-xs">
                 Contact Us
               </a>
             </li>
             <li className="text-gray-300 font-bold uppercase check">
-              <a href="/" className="text-xs">
+              <a href="/#faqs" className="text-xs">
                 FAQs
               </a>
             </li>
+            <li className="text-gray-300 font-bold uppercase check">
+              <Link to="/register" className="text-xs">
+                Register
+              </Link>
+            </li>
           </ul>
-          <div>
+          {/* <div>
             <Link
               to="/register"
-              className="text-gray-300 font-bold uppercase text-xs"
+              className="text-white bg-co-yellow p-4 rounded-sm font-bold uppercase text-xs"
             >
-              Get Started
+              Register
             </Link>
-          </div>
+          </div> */}
         </div>
       </nav>
 
       <div
         className={`md:hidden flex justify-between bg-nav-grey w-full px-4 py-6 `}
       >
-        <div className="relative">
+        <Link to="/" className="relative">
           <img src={Logo} alt="lord cross logo" className="w-2/5" />
-        </div>
+        </Link>
         <div className="relative">
           <MobileIcon toggle={toggle} openNav={openNav} />
         </div>
         <div className={attachedClasses.join(" ")}>
-          <div className="side__nav_logo">
-            <img src={Logo} alt="as8s logo" className="w-20" />
-          </div>
+          <Link to="/" className="side__nav_logo mt-2">
+            <img src={Logo} alt="lordcross logo" className="w-28" />
+          </Link>
           <ul className="nav__list">
-            <li className="mt-6 uppercase text-gray-500 " onClick={openNav}>
+            <li className="mt-6 uppercase text-gray-300 " onClick={openNav}>
               <Link to="/">Home</Link>
             </li>
 
-            <li className="mt-6 uppercase text-gray-500" onClick={openNav}>
-              <a href="#features">About</a>
+            <li className="mt-6 uppercase text-gray-300" onClick={openNav}>
+              <Link to="/about">About</Link>
             </li>
 
-            <li className="mt-6 uppercase text-gray-500">
-              <a href="#mission">Services</a>
+            <li className="mt-6 uppercase text-gray-300">
+              <a href="#services">Services</a>
             </li>
 
-            <li className="mt-6 uppercase text-gray-500">
-              <a href="#footer">Contact us</a>
+            <li className="mt-6 uppercase text-gray-300">
+              <a href="#enquiry">Contact us</a>
             </li>
-            <li className="mt-6 uppercase text-gray-500">
+            <li className="mt-6 uppercase text-gray-300">
               <a href="#footer">FAQs</a>
             </li>
           </ul>

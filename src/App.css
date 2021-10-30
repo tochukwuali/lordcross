@@ -110,10 +110,10 @@ body {
   align-items: center;
   color: #000;
   font-weight: bold;
-  background-color: #fff;
+  background-color: #2F327D;
   max-height: 100vh;
   height: 500px;
-  padding: 20px 0px;
+  padding:12px 0px;
   transition-property: all;
   transition-duration: 2s;
   transition-timing-function: cubic-bezier(1, 1, 0.5, 1);
@@ -142,4 +142,6 @@ body {
   position: absolute;
   top: 16px;
   left: 20px;
+  width: 44%;
 }
+

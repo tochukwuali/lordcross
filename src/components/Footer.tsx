@@ -7,13 +7,16 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="bg-co-blue py-6 px-4">
+    <section className="bg-co-blue py-8 px-4">
       <div className="mx-auto xl:max-w-6xl md:max-4w-xl ">
         <div className="md:flex md:flex-col text-left md:justify-center items-center ">
-          <div className="md:w-1/5">
+          <div className="md:w-1/5 w-52">
             <img src={Logo} alt="lordcross logo" className="w-3/5" />
           </div>
-          <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 mt-8 md:-ml-20">
+          <div className="md:text-center md:-ml-20 mt-5">
+          <p className="text-gray-400 text-sm font-semibold">info@lordcross.co.uk</p>
+        </div>
+          <div className="flex flex-col md:flex-row md:space-x-8 space-y-3 md:space-y-0 mt-4 md:-ml-20">
             <Link
               to="/about"
               className="md:uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
@@ -27,14 +30,14 @@ const Footer = () => {
               Get Started
             </Link>
             <Link
-              to="/about"
+              to="/#services"
               className="md:uppercase text-gray-400 text-sm  font-semibold hover:text-gray-200"
             >
               Services
             </Link>
           </div>
         </div>
-        <div className="md:grid md:grid-cols-3 flex flex-col-reverse  md:justify-items-stretch mt-3">
+        <div className="md:grid md:grid-cols-3 flex flex-col md:justify-items-stretch mt-2">
           <div className="md:flex mt-5 md:items-center space-x-3 hidden">
             <IconContext.Provider
               value={{ className: "text-gray-400 text-base" }}
@@ -69,9 +72,6 @@ const Footer = () => {
               &copy; 2021 Lord Cross Consults. All rights reserved.
             </p>
           </div>
-        </div>
-        <div className="md:text-center md:-ml-20 mt-5">
-          <p className="text-gray-400 text-sm font-semibold">info@lordcross.co.uk</p>
         </div>
       </div>
     </section>
