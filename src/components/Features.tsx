@@ -46,7 +46,7 @@ const Features = () => {
           </h3>
           
           <p className="mx-auto md:max-w-3xl px-4 mt-8 md:mt-8 text-gray-500">
-            We help you alleviate the stress involved in relocating to "the abroad" for your studies
+            We help you alleviate the stress involved in relocating abroad for work or study
           </p>
         </div>
         <div className="flex flex-col md:flex-row md:space-x-6 space-y-12 md:space-y-0 mt-12">

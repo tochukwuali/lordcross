@@ -3,6 +3,7 @@ import { CountryDropdown } from "react-country-region-selector";
 import { FaChevronRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
+import emailjs from 'emailjs-com';
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -13,28 +14,21 @@ const Register = () => {
   const [programme, setProgramme] = useState("");
   const [comment, setComment] = useState("");
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  };  
+  const TEMPLATE_ID = "template_gim67f9"
+  const SERVICE_ID = "lordcross_application"
+  const USER_ID = "user_HFzplbWYZnDvabh3ppQkd"
 
   const handleSubmit = (e) => {
-    const userData = {
-      firstName,
-      lastName,
-      email,
-      country,
-      phone,    
-      programme,
-      comment,
-    };
+    e.preventDefault();
+  
     if (navigator.onLine) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "lordcross_register", ...userData }),
-      })
+     
+        emailjs.sendForm(
+          SERVICE_ID,
+          TEMPLATE_ID,
+          e.target,
+          USER_ID
+        )
         .then((result) =>
           console.log(result)
         )
@@ -49,7 +43,7 @@ const Register = () => {
     } else {
       console.log('trying')
     }
-    e.preventDefault();
+    
   };
 
   return (
@@ -90,6 +84,7 @@ const Register = () => {
                           type="text"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           value={firstName}
+                          name="firstName"
                           placeholder="Enter First Name"
                           onChange={e => setFirstName(e.target.value)}
                         />
@@ -107,6 +102,7 @@ const Register = () => {
                           type="text"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           value={lastName}
+                          name="lastName"
                           placeholder="Enter Last Name"
                           onChange={e => setLastName(e.target.value)}
                         />
@@ -124,6 +120,7 @@ const Register = () => {
                           type="email"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           value={email}
+                          name="email"
                           placeholder="Email"
                           onChange={e => setEmail(e.target.value)}
                         />
@@ -141,6 +138,7 @@ const Register = () => {
                           type="text"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           value={phone}
+                          name="phone"
                           placeholder="Phone Number"
                           onChange={e => setPhone(e.target.value)}
                         />
@@ -218,6 +216,7 @@ const Register = () => {
                         </label>
                         <textarea
                           value={comment}
+                          name="comment"
                           onChange={e => setComment(e.target.value)}
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         ></textarea>

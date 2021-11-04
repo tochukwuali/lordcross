@@ -1,5 +1,4 @@
 import Logo from "../assets/lc_logo.png";
-import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import { BsInstagram } from "react-icons/bs";
 import { IconContext } from "react-icons";
@@ -46,12 +45,8 @@ const Footer = () => {
             </IconContext.Provider>
             <span className="text-gray-400">English</span>
           </div>
-          <div className="flex space-x-8 mt-6 md:ml-24">
-            <IconContext.Provider
-              value={{ className: "text-gray-400 text-base" }}
-            >
-              <FaLinkedin />
-            </IconContext.Provider>
+          <div className="flex space-x-8 mt-6 md:ml-36">
+            
             <a href="https://instagram.com/lordcross_">
               <IconContext.Provider
                 value={{ className: "text-gray-400 text-base hover:text-co-yellow" }}
@@ -59,17 +54,11 @@ const Footer = () => {
                 <BsInstagram />
               </IconContext.Provider>
             </a>
-            <a href="https://facebook.com/lordcrossconsults">
-            <IconContext.Provider
-              value={{ className: "text-gray-400 text-base hover:text-co-yellow" }}
-            >
-              <FaFacebookSquare />
-            </IconContext.Provider>
-            </a>
+           
           </div>
           <div className="mt-6 md:justify-self-end">
             <p className="text-gray-400 text-sm">
-              &copy; 2021 Lord Cross Consults. All rights reserved.
+              &copy; 2021 Lord Cross. All rights reserved.
             </p>
           </div>
         </div>

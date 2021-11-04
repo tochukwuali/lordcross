@@ -44,11 +44,7 @@ const Nav = () => {
                 Contact Us
               </a>
             </li>
-            <li className="text-gray-300 font-bold uppercase check">
-              <a href="/#faqs" className="text-xs">
-                FAQs
-              </a>
-            </li>
+            
             <li className="text-gray-300 font-bold uppercase check">
               <Link to="/register" className="text-xs">
                 Register
@@ -95,9 +91,7 @@ const Nav = () => {
             <li className="mt-6 uppercase text-gray-300">
               <a href="#enquiry">Contact us</a>
             </li>
-            <li className="mt-6 uppercase text-gray-300">
-              <a href="#footer">FAQs</a>
-            </li>
+            
           </ul>
         </div>
       </div>

@@ -23,24 +23,24 @@ const Testimonials = () => {
   const testimonies = [
     {
       id: 1,
-      name: "Alegu Joshua",
-      current: "Phd Research @ Edinburgh Napier University",
+      name: "Peter",
+      current: "",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ea doloremque ipsa eius aliquam minus maiores cumque adipisci delectus unde?",
+        "Lord Cross is fantastic travel agent, effectively listening and assistive in all areas, I am 100% satisfied with the level of service and I highly recommend.",
     },
     {
       id: 2,
-      name: "Kingsley Iroakazi",
-      current: "Msc Student @ University of Oxford",
+      name: "Arilewola Timilehin Victoria",
+      current: "",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ea doloremque ipsa eius aliquam minus maiores cumque adipisci delectus unde?",
+        "I am completely happy and satisfied with the level of professional customer service I received from Lord Cross. I highly recommend. ",
     },
     {
       id: 3,
-      name: "Adedapo Adebanjo",
-      current: "Rhodes Scholar @ University of Oxford",
+      name: "Latifat Omiata",
+      current: "",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ea doloremque ipsa eius aliquam minus maiores cumque adipisci delectus unde?",
+        "The tenacity and dedication is top notch. Encouraging and engaging at every point in the way. I will not hesitate to recommend his services repeatedly because he is 100% sure.",
     },
   ];
   return (
@@ -63,7 +63,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      <div className="mt-8 px-4">
+      <div className="mt-8 px-4 md:hidden">
       <Slider {...settings} className="">
       {testimonies.map(({ name, description, current }, index) => (
           <div
