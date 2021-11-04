@@ -44,7 +44,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="max-w-6xl mx-auto mt-16 md:mt-24">
+    <div className="2xl:max-w-7xl xl:max-w-6xl lg:max-w-4xl md:max-w-3xl mx-auto mt-16 md:mt-24">
       <div className="text-center">
         <h3 className="font-semibold md:text-4xl leading-tight text-2xl text-co-blue">
           Don't take our word for it{" "}

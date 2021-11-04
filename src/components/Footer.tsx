@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section className="bg-co-blue py-8 px-4">
-      <div className="mx-auto xl:max-w-6xl md:max-4w-xl ">
+      <div className="mx-auto 2xl:max-w-7xl xl:max-w-6xl lg:max-w-4xl md:max-w-3xl ">
         <div className="md:flex md:flex-col text-left md:justify-center items-center ">
           <div className="md:w-1/5 w-52">
             <img src={Logo} alt="lordcross logo" className="w-3/5" />
@@ -45,7 +45,7 @@ const Footer = () => {
             </IconContext.Provider>
             <span className="text-gray-400">English</span>
           </div>
-          <div className="flex space-x-8 mt-6 md:ml-36">
+          <div className="flex space-x-8 mt-6 md:ml-36 lg:ml-24 xl:ml-32 2xl:ml-40">
             
             <a href="https://instagram.com/lordcross_">
               <IconContext.Provider

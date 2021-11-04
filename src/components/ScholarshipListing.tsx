@@ -13,7 +13,7 @@ const logos = [ENU, Bristol, Bmg, Essex, Aston, Cam, Reading, Lancaster];
 const Steps = () => {
   return (
     <section className="py-12 px-4 md:py-24 bg-white">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:space-x-10">
+      <div className="2xl:max-w-7xl xl:max-w-6xl lg:max-w-4xl md:max-w-3xl mx-auto flex flex-col md:flex-row md:space-x-10">
         <div className="text-center md:w-1/2">
           <h3 className="font-bold md:text-3xl text-2xl text-blue-900">
             We know where you can find
@@ -28,10 +28,10 @@ const Steps = () => {
           ))}
         </div>
       </div>
-      <div className="mt-8 md:mt-0 px-4 md:px-0 xl:max-w-6xl mx-auto md:ml-60 md:max-w-4xl text-center md:text-left ">
+      <div className="mt-8 md:mt-0 lg:mt-4 px-4 md:px-0 xl:max-w-6xl lg:max-w-4xl mx-auto md:ml-60 lg:ml-20 md:max-w-3xl text-center md:text-left ">
         <Link
           to="/scholarship"
-          className="bg-co-yellow p-4 rounded-sm text-white inline-block font-medium w-full md:w-1/6"
+          className="bg-co-yellow p-4 rounded-sm text-white inline-block font-medium w-full md:w-1/6 lg:w-2/5"
         >
           See Opportunities
         </Link>

@@ -22,7 +22,7 @@ const Nav = () => {
   return (
     <div className="w-full bg-co-blue">
       <nav
-        className={`xl:px-24 mx-auto md:flex md:justify-between py-6 hidden `}
+        className={`2xl:max-w-7xl xl:max-w-6xl lg:max-w-4xl md:max-w-3xl md:items-center mx-auto md:flex md:justify-between py-6 hidden `}
       >
         <Link to="/" className="w-1/4">
           <img src={Logo} alt="lordcross logo" className="w-9/12" />

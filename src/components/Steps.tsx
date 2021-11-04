@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Steps = () => {
   return (
     <section className="py-12 px-4 md:py-18 relative bg-co-blue">
-      <div className="xl:max-w-6xl md:max-w-4xl mx-auto md:h-52 p-4 flex flex-col md:flex-row md:items-center md:space-x-24">
+      <div className="2xl:max-w-7xl xl:max-w-6xl lg:max-w-4xl md:max-w-3xl mx-auto md:h-52 p-4 flex flex-col md:flex-row md:items-center md:space-x-24">
         <div className="text-center">
           <h3 className="font-bold w-full md:text-3xl text-3xl md:text-gray-200 text-gray-300">
             Get started in 5 minutes
@@ -38,7 +38,7 @@ const Steps = () => {
           </div>
         </div>
       </div>
-      <div className="xl:max-w-6xl md:max-w-4xl md:-mt-28 text-center mx-8 md:mx-auto md:text-left md:p-4 ">
+      <div className="2xl:max-w-7xl xl:max-w-6xl md:max-w-3xl md:-mt-28 text-center mx-8 md:mx-auto md:text-left md:p-4 ">
         <Link
           to="/register"
           className="bg-green-700 rounded-sm text-white py-3 px-6 mt-12 inline-block w-full md:w-40"

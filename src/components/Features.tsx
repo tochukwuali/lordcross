@@ -38,8 +38,8 @@ const Features = () => {
     },
   ];
   return (
-    <section id="services" className="py-16 px-6 md:py-24 -mt-24 md:-mt-0 relative bg-white">
-      <div className="xl:max-w-6xl md:max-w-4xl mx-auto">
+    <section id="services" className="py-16 px-6 md:py-24 -mt-24 2xl:-mt-64 md:-mt-0 relative bg-white">
+      <div className="2xl:max-w-7xl xl:max-w-6xl md:max-w-3xl lg:max-w-4xl mx-auto">
         <div className="text-center">
           <h3 className="font-bold md:text-4xl text-2xl text-blue-900">
           What we can <span className="text-co-yellow">do for you</span>
